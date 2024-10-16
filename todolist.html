@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom manipulation example</title>
+</head>
+<body>
+   <h1>Modifying DOM</h1>
+   <input type="text" id="iteminput" placeholder="enter an item"/>
+   <button id="addItemButton">Add item</button>
+   <ul id="itemlist"></ul>
+   <script>
+    const input=document.getElementById("text");
+    const button=document.getElementById("addItemButton");
+    const list=document.getElementById("temlist");
+ button.addEventListener("click",function(){
+    
+   if(input.value.trim()!==''){
+    let newItem=document.createElement("li");
+    newItem.textContent=itemInput.value;
+    itemList.appendChild(newItem);
+    
+    let deleteButton=document.createElement("button");
+    deleteButton.textContent="Delete";
+    newItem.appendChild(deleteButton);
+    deleteButton.addEventListener("click",function(){
+      newItem.remove();
+    }
+    itemInput.value= ""
+}
+ }
+}
+   </script> 
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipulation</title>
+</head>
+<body>
+    <h1 id="title">hello</h1>
+    <h2 class="code1">code</h2>
+    <h2 class="code1">code</h2>
+    <h2 class="code2">code</h2>
+    <p>paragraph 1</p>
+    <p>paragraph 2</p>
+    <p>paragraph 3</p>
+    <script>
+let element=document.getElementById("title")
+//element.style.backgroundColor="red"
+element.innerHTML("hai");
+element.outerHTML("<h1>arun<h1>")
+    
+let element2=document.getElementsByClassName("code1")
+element2[0].style.backgroundColor="blue"
+element2[1].style.backgroundColor="yellow"
+let element4=document.getElementsByClassName("code2")
+element4[0].style.backgroundColor="orange"
+
+let element3=document.getElementsByTagName("p")
+element3[0].style.backgroundColor="green"
+element3[1].style.backgroundColor="pink"
+element3[2].style.backgroundColor="violet"
+    </script>
+</body>
+</html>

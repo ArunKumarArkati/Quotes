@@ -1,0 +1,11 @@
+const fruits=["mango","apple","orange"];
+console.log("array fruits are",fruits);
+fruits[0]="banana";
+fruits[3]="pinapple";
+console.log("array fruits are",fruits);
+const numbers=[1,2,3,4];
+console.log("numbers are",numbers);
+const colors=[];
+colors[0]="blue";
+colors[1]="red";
+console.log("colors are ",colors);
